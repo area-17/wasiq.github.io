@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thank you!</title>
+<!-- define some style elements-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+</head>
+
+<body>
+	<div class=".ui container">
+		<div class="ui modal">
+			<div class="close icon"></div>
+			<div class="header">Thank you!
+			</div>
+			<div class="content">
+				<div class="description">We will contact you soon! Click the <a href="index.html" target="_blank">Go</a> button to return to the home page</div>
+			</div>
+			<div class="actions">
+				<a href="index.html" class="ui fluid container teal submit button" type="submit" value="Go">Go</a>
+			</div>
+		</div>
+	</div>
+	<script>
+	$('.ui.modal')
+		.modal('show');
+
+</script>
+</body>
+</html>

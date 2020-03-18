@@ -1,0 +1,895 @@
+<html lang="en-US" class="no-touch">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/uikit.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.6/js/uikit.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/shicon.jpg">
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/css/uikit.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+
+<style type="text/css">
+      footer {
+        background-color:#686868;
+        padding-top:2rem ;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      body {
+        margin: 0;
+    background-color: #191919;
+    background-image: url(img/bg.jpg);
+    position: relative;
+    -webkit-overflow-scrolling: auto;
+    overflow: auto;
+    -webkit-transform-style: preserve-3d;
+}
+    </style>  
+    <script>
+      $(document)
+        .ready(function() {
+    
+          // fix menu when passed
+          $('.masthead')
+            .visibility({
+              once: false,
+              onBottomPassed: function() {
+                $('.fixed.menu').transition('fade in');
+              },
+              onBottomPassedReverse: function() {
+                $('.fixed.menu').transition('fade out');
+              }
+            })
+          ;
+    
+          // create sidebar and attach to menu open
+ //         $('.ui.menu').sidebar('attach events', '.menu.item');
+    
+ $('.category.example .ui.dropdown')
+  .dropdown({
+    allowCategorySelection: true
+  })
+;
+        })
+      ;
+      
+      </script>
+    <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+
+    <title>WORKERS AGAINST SECTARIANISM</title><script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.yootheme.com\/themes\/wordpress\/2017\/fjord\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.5"}};
+        !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script><script src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-includes/js/wp-emoji-release.min.js?ver=5.2.5" type="text/javascript" defer=""></script>
+
+<meta name="generator" content="WordPress 5.2.5">
+<meta name="generator" content="WooCommerce 3.7.1">
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<script>var $theme = {};</script>
+<style type="text/css">/* This is not a zero-length file! */</style>
+</head>
+<body class="page-template-default page page-id-21  theme-yootheme woocommerce-js" data-gr-c-s-loaded="true">
+    
+    
+    <div class="tm-page">
+
+                    
+<div class="tm-header-mobile uk-hidden@m">
+
+
+<div class="uk-navbar-container">
+    <nav uk-navbar="" class="uk-navbar">
+
+                    <div class="uk-navbar-left">
+
+            
+                            <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="">
+                <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></div>
+                                </a>
+            
+            
+        </div>
+        
+                    <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="https://demo.yootheme.com/themes/wordpress/2017/fjord">
+                <img alt="Fjord" src="/themes/wordpress/2017/fjord/wp-content/uploads/logo-mobile.svg">                </a>
+        </div>
+        
+        
+    </nav>
+</div>
+
+
+
+<div id="tm-mobile" uk-offcanvas="" mode="slide" overlay="" class="uk-offcanvas">
+<div class="uk-offcanvas-bar">
+
+    <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+
+    
+        
+<div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">    <div>
+<div class="uk-panel">
+
+
+
+<ul class="uk-nav uk-nav-default">
+
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home">Home</a></li>
+<li class="uk-parent"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=22" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">Destinations</a>
+<ul class="uk-nav-sub">
+
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=23" class=" menu-item menu-item-type-post_type menu-item-object-page">New Zealand</a></li></ul></li>
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=20" class=" menu-item menu-item-type-post_type menu-item-object-page">About</a></li>
+<li class="uk-active"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=21" class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-21 current_page_item">Resources</a></li>
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?cat=2" class=" menu-item menu-item-type-taxonomy menu-item-object-category">Stories</a></li>
+<li class="uk-parent"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=219" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">Shop</a>
+<ul class="uk-nav-sub">
+
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=220" class=" menu-item menu-item-type-post_type menu-item-object-page">Cart</a></li>
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=222" class=" menu-item menu-item-type-post_type menu-item-object-page">My account</a></li></ul></li></ul>
+
+</div>
+</div></div>
+        
+</div>
+</div>
+
+</div>
+
+
+<div class="tm-toolbar tm-toolbar-default uk-visible@m">
+<div class="uk-container uk-flex uk-flex-middle">
+
+            <div>
+        <div class="uk-grid-medium uk-child-width-auto uk-flex-middle uk-grid uk-grid-stack" uk-grid="margin: uk-margin-small-top">
+
+                            <div class="uk-first-column">
+<div class="uk-panel widget-text" id="widget-text-3">
+
+
+            <div class="uk-panel textwidget">We are looking for passionate travelers all over the world, who would like to write with us!</div>
+    
+</div>
+</div>                
+            
+        </div>
+    </div>
+    
+            <div class="uk-margin-auto-left">
+        <div class="uk-grid-medium uk-child-width-auto uk-flex-middle uk-grid uk-grid-stack" uk-grid="margin: uk-margin-small-top">
+            <div class="uk-first-column">
+<div class="uk-panel widget-text" id="widget-text-4">
+
+
+            <div class="uk-panel textwidget"><a class="uk-button uk-button-text" href="/themes/wordpress/2017/fjord/index.php?page_id=20#contact">Contact us</a></div>
+    
+</div>
+</div>            </div>
+    </div>
+    
+</div>
+</div>
+
+<div class="tm-header uk-visible@m" uk-header="">
+
+
+
+
+
+
+            <div uk-sticky="" media="@m" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container" class="uk-sticky" style="">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;center&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;}">
+
+                    <div class="uk-navbar-center">
+
+                        
+                            <div class="uk-navbar-center-left uk-preserve-width"><div>
+                                
+<ul class="uk-navbar-nav">
+
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home">Home</a></li>
+<li class="uk-parent"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-expanded="false">Destinations</a>
+<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-center" style="left: 35.3438px; top: 80px;"><div class="uk-navbar-dropdown-grid uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid=""><div class="uk-first-column"><ul class="uk-nav uk-navbar-dropdown-nav">
+
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=23" class=" menu-item menu-item-type-post_type menu-item-object-page">New Zealand</a></li></ul></div></div></div></li>
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=20" class=" menu-item menu-item-type-post_type menu-item-object-page">About</a></li></ul>
+                            </div></div>
+
+                            
+<a href="https://demo.yootheme.com/themes/wordpress/2017/fjord" class="uk-navbar-item uk-logo">
+<img alt="Fjord" src="/themes/wordpress/2017/fjord/wp-content/uploads/logo.svg"><img class="uk-logo-inverse" alt="Fjord" src="/themes/wordpress/2017/fjord/wp-content/uploads/logo-inverted.svg"></a>
+
+                            <div class="uk-navbar-center-right uk-preserve-width"><div>
+                                
+<ul class="uk-navbar-nav">
+
+<li class="uk-active"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=21" class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-21 current_page_item">Resources</a></li>
+<li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?cat=2" class=" menu-item menu-item-type-taxonomy menu-item-object-category">Stories</a></li>
+<li class="uk-parent"><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-expanded="false">Shop</a>
+<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-center" style="left: 132.687px; top: 80px;"><div class="uk-navbar-dropdown-grid uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid=""><div class="uk-first-column"><ul class="uk-nav uk-navbar-dropdown-nav">
+
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=220" class=" menu-item menu-item-type-post_type menu-item-object-page">Cart</a></li>
+    <li><a href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=222" class=" menu-item menu-item-type-post_type menu-item-object-page">My account</a></li></ul></div></div></div></li></ul>
+                            </div></div>
+
+                        
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+
+            </div><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;" hidden=""></div>
+    
+
+
+
+
+
+</div>
+        
+        
+        <!-- Builder #page -->
+<div class="uk-section-secondary uk-section-overlap" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-medium; delay: 200;">
+    <div data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-a313a7ff.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-da53f7d6.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-2833095e.webp 1024w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-c9ba55ee.webp 1366w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-646a5147.webp 1600w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-a313a7ff.webp 1920w" data-sizes="(max-aspect-ratio: 1920/1000) 192vh" uk-img="" class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xlarge" style="background-image: url(&quot;https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-header-a313a7ff.webp&quot;);">    
+    
+    
+    
+        
+        <div class="uk-container"><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            
+<h1 class="uk-h5 uk-margin-small uk-text-center uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">        Guides and Tips for your next Adventure    </h1>
+<h2 class="uk-heading-large uk-margin-small uk-text-center uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">        Resources    </h2>
+        
+    
+
+</div>
+</div></div>
+        
+    
+    </div>
+
+</div>
+
+<div class="uk-section-default uk-section-overlap uk-section uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+
+    
+    
+    
+        
+        <div class="uk-container"><div class="uk-grid-margin uk-grid" uk-grid="">
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-first-column">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<div class="uk-margin uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="">
+    <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-8164423a.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-4c0bb939.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-8164423a.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-2ec6d63e.webp 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="613" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-2ec6d63e.webp" sizes="(min-width: 920px) 920px" srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-4c0bb939.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-8164423a.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-packing-2ec6d63e.webp 960w">    
+
+</div>
+
+                    </div>
+        
+    
+
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<h2 class="uk-text-left@s uk-text-center uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="">        Travel Gear &amp; Packing Tips    </h2><div class="uk-margin uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="">Vehicula hymenaeos tincidunt mattis, volutpat congue sed wisi, nec suspendisse donec risus nullam tellus quis. Commodi ante nec primis ut fusce, et justo, aliquam et felis tempor, arcu magna. Quam tristique iaculis, tellus rhoncus quis nonummy potenti felis, donec suscipit euismod donec mattis enim massa. Magna et odio suspendisse fusce in mauris, vestibulum orci et urna, elit faucibus tellus felis commodo pretium proin. Integer curabitur ac montes lacus.</div>
+                    </div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid" uk-grid="">
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">
+    <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-336be70d.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-07fb570e.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-336be70d.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-65363809.webp 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="613" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-65363809.webp" sizes="(min-width: 920px) 920px" srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-07fb570e.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-336be70d.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-planning-65363809.webp 960w">    
+
+</div>
+
+                    </div>
+        
+    
+
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-flex-first@m uk-first-column">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<h2 class="uk-text-left@s uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">        Travel Planning Tips    </h2><div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">Et eu, porta imperdiet consequat, amet condimentum sed, nec phasellus interdum mattis cursus dui aliquet, maecenas ac vitae natoque pretium molestie. Donec aliquet nisl vestibulum at pariatur cras, vestibulum eget in diam risus dolor, lacinia volutpat. Donec lectus vel, arcu id ullamcorper in egestas. Mollis et eu non aliquet metus orci, at congue, eu turpis tellus.</div>
+                    </div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid" uk-grid="">
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-first-column">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">
+    <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-d2611354.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-19a4fc23.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-d2611354.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-7b699324.webp 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="613" uk-img="" sizes="(min-width: 920px) 920px" srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-19a4fc23.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-d2611354.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-7b699324.webp 960w" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-safety-d2611354.webp">    
+
+</div>
+
+                    </div>
+        
+    
+
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<h2 class="uk-text-left@s uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">        Travel Safety &amp; Health    </h2><div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">Vehicula hymenaeos tincidunt mattis, volutpat congue sed wisi, nec suspendisse donec risus nullam tellus quis. Commodi ante nec primis ut fusce, et justo, aliquam et felis tempor, arcu magna. Quam tristique iaculis, tellus rhoncus quis nonummy potenti felis, donec suscipit euismod donec mattis enim massa. Magna et odio suspendisse fusce in mauris, vestibulum orci et urna, elit faucibus tellus felis commodo pretium proin. Integer curabitur ac montes lacus.</div>
+                    </div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid" uk-grid="">
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">
+    <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-1da3ec7c.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-36bd26e8.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-1da3ec7c.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-547049ef.webp 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="613" uk-img="" sizes="(min-width: 920px) 920px" srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-36bd26e8.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-1da3ec7c.webp 920w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-547049ef.webp 960w" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-photography-1da3ec7c.webp">    
+
+</div>
+
+                    </div>
+        
+    
+
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-flex-first@m uk-first-column">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<h2 class="uk-text-left@s uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">        Travel Photography Advice    </h2><div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">Et eu, porta imperdiet consequat, amet condimentum sed, nec phasellus interdum mattis cursus dui aliquet, maecenas ac vitae natoque pretium molestie. Donec aliquet nisl vestibulum at pariatur cras, vestibulum eget in diam risus dolor, lacinia volutpat. Donec lectus vel, arcu id ullamcorper in egestas. Mollis et eu non aliquet metus orci, at congue, eu turpis tellus.</div>
+                    </div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            <div class="uk-divider-icon uk-width-large uk-margin-auto" uk-scrollspy-class="" style="visibility: hidden;"></div><div class="uk-text-large uk-text-muted uk-margin-medium uk-width-xlarge uk-margin-auto uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">In case you miss any information or just want to give us feedback, please feel free to <a href="/themes/wordpress/2017/fjord/index.php?page_id=20">contact us</a>.</div>
+        
+    
+
+</div>
+</div></div>
+        
+    
+
+</div>
+
+<div class="uk-section-secondary uk-section uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+
+    
+    
+    
+        
+        <div class="uk-container"><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            
+<h2 class="uk-h5" uk-scrollspy-class="" style="visibility: hidden;">        Frequently Asked Questions    </h2><div class="uk-divider-small" uk-scrollspy-class="" style="visibility: hidden;"></div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            
+<div class="uk-margin uk-text-left@s uk-text-center">
+<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-large uk-grid-match uk-grid" uk-grid="">        <div class="uk-first-column">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        What's your favorite airline?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Lorem ipsum dolor sit amet, lorem eu vitae gravida nisl fringilla lorem, vehicula feugiat lobortis. In vitae ut, vivamus id. Nulla aenean felis arcu, elit mauris fringilla massa blandit. Luctus commodo facilisi iaculis at nullam.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div>
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        How do I prepare myself?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Penatibus velit eu, neque mauris magna nulla maecenas arcu, at quisque massa dictum, aut justo dui ligula facilisis quam tortor. Aliquam mattis aliquet lectus ac lacus. Placerat placerat a urna velit sed. Turpis est tempus lacus sed sodales vel,.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div>
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Where can I find the best gear for my adventures?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Velit ut, risus erat urna, mollis nulla fringilla blandit viverra consequat, erat lorem lectus, ipsum blandit. Consectetuer nec ligula pretium quaerat, nonummy turpis deleniti a quisque nullam massa.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin uk-first-column">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        What should I do when I get sick?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Penatibus velit eu, neque mauris magna nulla maecenas arcu, at quisque massa dictum, aut justo dui ligula facilisis quam tortor. Aliquam mattis aliquet lectus ac lacus. Placerat placerat a urna velit sed. Turpis est tempus lacus sed sodales vel.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Should I use cash money or credit cards for my trips?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Velit ut, risus erat urna, mollis nulla fringilla blandit viverra consequat, erat lorem lectus, ipsum blandit. Consectetuer nec ligula pretium quaerat, nonummy turpis deleniti a quisque nullam massa.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Do I have to learn new languages?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Lorem ipsum dolor sit amet, lorem eu vitae gravida nisl fringilla lorem, vehicula feugiat lobortis. In vitae ut, vivamus id. Nulla aenean felis arcu, elit mauris fringilla massa blandit. Luctus commodo.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin uk-first-column">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Where do I find people for group trips and adventures?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Lorem ipsum dolor sit amet, lorem eu vitae gravida nisl fringilla lorem, vehicula feugiat lobortis. In vitae ut, vivamus id. Nulla aenean felis arcu, elit mauris fringilla massa blandit. Luctus commodo facilisi iaculis at nullam.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        How much luggage can I take?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Aliquam id elit cursus phasellus, in ut pede integer non ut dui, lacus phasellus dolor praesent diam sodales, aliquam etiam sodales ullamcorper vulputate. Fermentum et commodo mauris vivamus nec.</div>        
+    
+    
+    
+    
+
+</div></div>
+    <div class="uk-grid-margin">
+<div class="el-item uk-panel uk-margin-remove-first-child" uk-scrollspy-class="" style="visibility: hidden;">
+
+                    
+                
+
+    
+            <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Do I need a sleeping bag?                    </h3>        
+    
+
+    
+    
+            <div class="el-content uk-panel uk-margin-top">Magna vel dolorem eros erat, fermentum ornare a curabitur, natoque vel. Integer lacinia habitasse sed integer massa integer, dui sem, eu ligula integer adipiscing est, sodales commodo nunc vestibulum.</div>        
+    
+    
+    
+    
+
+</div></div>
+    </div>
+
+</div>
+
+        
+    
+
+</div>
+</div></div>
+        
+    
+
+</div>
+
+<div class="uk-section-image uk-section-overlap uk-position-relative" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-scale-up; delay: false;">
+    <div data-src="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-dcb68cc7.webp" data-srcset="/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-093aa8b9.webp 768w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-5dcea973.webp 1024w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-c70a20f0.webp 1366w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-e2c1e90d.webp 1600w, /themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-dcb68cc7.webp 1920w" data-sizes="(min-width: 1920px) 1920px" uk-img="" class="uk-background-norepeat uk-background-contain uk-background-bottom-center uk-section uk-section-xlarge" style="background-image: url(&quot;https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/themes/yootheme/cache/resources-background-c70a20f0.webp&quot;);">    
+    
+            <div class="uk-position-cover" style="background-color: rgba(255, 255, 255, 0.87);"></div>        
+    
+        
+        <div class="uk-container uk-position-relative"><div class="uk-margin-large uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            
+<h2 class="uk-h5 uk-margin-small uk-text-center" uk-scrollspy-class="uk-animation-slide-top-medium" style="visibility: hidden;">        Don't miss it    </h2>
+<h3 class="uk-h1 uk-margin-small uk-text-center" uk-scrollspy-class="uk-animation-slide-bottom-medium" style="visibility: hidden;">        Useful Travel Websites    </h3><div class="uk-divider-icon uk-width-medium uk-margin-auto" uk-scrollspy-class="" style="visibility: hidden;"></div>
+        
+    
+
+</div>
+</div><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+        
+            
+<div class="uk-margin uk-text-center">
+<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-collapse uk-grid-match uk-grid" uk-grid="">        <div class="uk-first-column">
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-01.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-01.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div>
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-02.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-02.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div>
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-03.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-03.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div>
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-04.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-04.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div class="uk-grid-margin uk-first-column">
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-05.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-05.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div class="uk-grid-margin">
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-06.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-06.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div class="uk-grid-margin">
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-07.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-07.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    <div class="uk-grid-margin">
+<a class="el-item uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-display-block uk-link-toggle" href="#" uk-scroll="" uk-scrollspy-class="" style="visibility: hidden;">
+
+            <img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-08.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/resources-logo-08.svg">        
+                
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+</a></div>
+    </div>
+
+</div>
+
+        
+    
+
+</div>
+</div></div>
+        
+    
+    </div>
+
+</div>
+
+        
+        <!-- Builder #footer -->
+<div class="uk-section-default uk-section" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-medium; delay: 200;">
+
+    
+    
+    
+        
+        <div class="uk-container"><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-1-1@m uk-first-column">
+
+    
+        
+                    <div class="uk-panel uk-width-1-1">            
+            
+<div class="uk-margin uk-text-center@m uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">
+    <a class="el-link" href="/themes/wordpress/2017/fjord/index.php"><img class="el-image" alt="" data-src="/themes/wordpress/2017/fjord/wp-content/uploads/logo.svg" uk-img="" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/uploads/logo.svg"></a>    
+
+</div>
+<div class="uk-text-meta uk-margin uk-text-center" uk-scrollspy-class="" style="visibility: hidden;">Created with YOOtheme Pro</div>
+                    </div>
+        
+    
+
+</div>
+</div></div>
+        
+    
+
+</div>
+
+    </div>
+
+        <script type="text/javascript">
+    var c = document.body.className;
+    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+    document.body.className = c;
+</script>
+        <script type="text/javascript">
+        var wc_product_block_data = JSON.parse( decodeURIComponent( '%7B%22min_columns%22%3A1%2C%22max_columns%22%3A6%2C%22default_columns%22%3A3%2C%22min_rows%22%3A1%2C%22max_rows%22%3A6%2C%22default_rows%22%3A1%2C%22thumbnail_size%22%3A300%2C%22placeholderImgSrc%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder.png%22%2C%22min_height%22%3A500%2C%22default_height%22%3A500%2C%22isLargeCatalog%22%3Afalse%2C%22limitTags%22%3Afalse%2C%22hasTags%22%3Atrue%2C%22productCategories%22%3A%5B%7B%22term_id%22%3A50%2C%22name%22%3A%22Hoodie%22%2C%22slug%22%3A%22hoodie%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A50%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A3%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2F%3Fproduct_cat%3Dhoodie%22%7D%2C%7B%22term_id%22%3A46%2C%22name%22%3A%22Other%22%2C%22slug%22%3A%22other%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A46%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A3%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2F%3Fproduct_cat%3Dother%22%7D%2C%7B%22term_id%22%3A49%2C%22name%22%3A%22T-Shirt%22%2C%22slug%22%3A%22tshirt%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A49%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22Fancy%20T-Shirts%22%2C%22parent%22%3A0%2C%22count%22%3A6%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2F%3Fproduct_cat%3Dtshirt%22%7D%2C%7B%22term_id%22%3A42%2C%22name%22%3A%22Uncategorized%22%2C%22slug%22%3A%22uncategorized%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A42%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A0%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2F%3Fproduct_cat%3Duncategorized%22%7D%5D%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fdemo.yootheme.com%5C%2Fthemes%5C%2Fwordpress%5C%2F2017%5C%2Ffjord%5C%2F%22%7D' ) );
+    </script>
+    <script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/themes\/wordpress\/2017\/fjord\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/wordpress\/2017\/fjord\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/demo.yootheme.com\/themes\/wordpress\/2017\/fjord\/?page_id=220","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.7.1"></script>
+<script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/themes\/wordpress\/2017\/fjord\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/wordpress\/2017\/fjord\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.7.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/themes\/wordpress\/2017\/fjord\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/wordpress\/2017\/fjord\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_8cdea260214b89ac0fd0300241af9ff2","fragment_name":"wc_fragments_8cdea260214b89ac0fd0300241af9ff2","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.7.1"></script>
+<script type="text/javascript">
+    jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+        jQuery( 'body' ).trigger( 'jetpack-lazy-images-load' );
+    } );
+
+</script>
+<script type="text/javascript" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/wp-includes/js/wp-embed.min.js?ver=5.2.5"></script>
+
+
+</body></html>
