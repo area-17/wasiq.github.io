@@ -25,6 +25,16 @@
 
     
     <style type="text/css">   
+    div.vnav {
+      position: fixed;
+      top: 65px;
+      right: ;
+      z-index: 99;     
+width: 100%;    
+   outline: none;
+
+      background-color: #dd0000;
+    }
     #myBtn {
       display: none;
       position: fixed;
@@ -62,13 +72,17 @@
 
         $(function() {
     var nav = $("#nav");
+        vnav = $("#navbarTogglerDemo03")
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
         if (scroll >= 50) {
-            nav.addClass(" fixed ");
+          nav.addClass(" fixed ");
+          vnav.addClass("vnav");
         } else {
             nav.removeClass("fixed");
+            vnav.removeClass("vnav");
+
         }
     });
 });
@@ -267,11 +281,21 @@
   </a>
   
   <div class="right menu">
-    <a class="ui item">
+    <a class="ui item navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <i class="large bars icon"></i>
     </a>
   </div>
 </div>
+  <div class="collapse" id="navbarTogglerDemo03">
+    <div style="margin-top: -12px; padding-left: 35px; background-color: black;" class="ui secondary pointing menu red vertical fluid ">
+      <a class="item">
+        Messages
+      </a>
+      <a class="item">
+        Friends
+      </a>
+    </div>
+  </div>
 
 
 <script>
